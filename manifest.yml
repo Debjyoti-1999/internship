@@ -15,11 +15,11 @@ features:
     always_online: false
   slash_commands:
     - command: /createaccount
-      url: https://jadepalace-server.aws.prodigaltech.com/slack/commands/createAccount
+      url: YOUR SERVER ADDRESS/slack/commands/createAccount
       description: creates account
       should_escape: false
     - command: /createsingleaccount
-      url: https://jadepalace-server.aws.prodigaltech.com/slack/commands/createSingleAccount
+      url: YOUR SERVER ADDRESS/slack/commands/createSingleAccount
       description: "createsingleaccount ProVoice/ProNotes will create single account "
       usage_hint: Use "/createSingleAccount ProNotes"      for creating ProNotes account
       should_escape: false
@@ -32,12 +32,12 @@ oauth_config:
       - incoming-webhook
 settings:
   event_subscriptions:
-    request_url: https://jadepalace-server.aws.prodigaltech.com/slack/events
+    request_url: YOUR SERVER ADDRESS/slack/events
     bot_events:
       - app_mention
   interactivity:
     is_enabled: true
-    request_url: https://jadepalace-server.aws.prodigaltech.com/slack/payloads
+    request_url: YOUR SERVER ADDRESS/slack/payloads
   org_deploy_enabled: false
   socket_mode_enabled: false
   token_rotation_enabled: false
