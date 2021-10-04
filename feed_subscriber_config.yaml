@@ -1,0 +1,16 @@
+sequium:
+  Name: sequium
+  FeedId: sequium
+  AgentFile: ./sequium_agent_list.sip_feed.txt
+ffam:
+  Name: ffam
+  FeedId: ffam
+  AgentFile: ./ffam_agent_list.sip_feed.txt
+rashcurtis:
+  Name: rashcurtis
+  FeedId: '1016371'
+  AgentFile: ./rashcurtis_agent_list.sip_feed.txt
+prodigal:
+  Name: prodigal
+  FeedId: prodigal
+  AgentFile: ./prodigal_agent_list_feed.txt

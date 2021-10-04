@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <style>
+  .background{
+    padding-left: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(192, 190, 186);
+    min-width: fit-content;
+  }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 10px;
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      width: 65%;
+      min-width:fit-content
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 10px 0;
+    
+  }
+  .header{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 110px;
+  }
+  .footer{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footerBand{
+    padding-left: 90%;
+  }
+  .textContent{
+    font-size: 17px;
+    color: grey;
+  }
+  .copyRight{
+    font-style: italic;
+  }
+  .mediaIcons{
+    height: 32px;
+  }
+  .logo{
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(10, 10, 10);
+    transition: 0.5s;
+  }
+.footerLogo{
+  height: 20px;
+  width: 20px;
+}
+
+  .loginButton {
+      border: 0;
+      line-height: 2.5;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 1px #000;
+      border-radius: 5px;
+      background-color: black;
+      background-image: linear-gradient(to top left,
+                                        rgba(0, 0, 0, .2),
+                                        rgba(0, 0, 0, .2) 30%,
+                                        rgba(0, 0, 0, 0));
+      box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                  inset -2px -2px 3px rgba(0, 0, 0, .6);
+  }
+  
+  .loginButton:hover {
+      background-color: orange;
+  }
+  
+  .prodigalLogo{
+    height: 100px;
+  }
+  .clientLogo{
+    height:40px;
+    width:40px;
+  }
+  .line{
+    height:1px;
+    width: 50%;
+    background-color: rgb(221, 220, 220);
+    margin: auto;
+  }
+  </style>
+</head>
+<body>
+<div class ="background">
+<div  class="grid-container">
+  <div class="header">
+    <%-include('../partials/email_Header')%>
+  <div class="line"></div>
+  </div>
+  <div class="content"> 
+    <%- include('../partials/email_Body')%>
+  </div>
+  <div class="footer">
+    <%-include('../partials/email_Footer')%>
+    <div class="footerBand">
+      <img class= "footerLogo" src="prodigalFooterLogo.png">
+    </div>
+  </div>    
+</div>
+</div>
+</body>
+</html>
